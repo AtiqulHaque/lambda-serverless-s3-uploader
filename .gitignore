@@ -106,4 +106,5 @@ dist
 pgdata/
 
 .vscode
-.serverless
+
+.serverless/
