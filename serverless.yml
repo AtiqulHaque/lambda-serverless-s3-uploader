@@ -9,11 +9,11 @@ service: ImageUploaderService
 
 # The `provider` block defines where your service will be deployed
 custom:
-  bucket: getting-started-lambda-example-atik007
+  bucket: s3-uploader-for-lambda-function-1234
 provider:
   name: aws
   runtime: nodejs12.x
-  region: eu-west-1
+  region: ap-southeast-1
   stackName: imageUploader
   iamRoleStatements:
     - Effect: "Allow"

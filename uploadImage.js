@@ -1,7 +1,7 @@
 "use strict";
 
 const AWS = require("aws-sdk");
-const uuid = require("uuid/v4");
+const uuid = require("uuid").v4;
 const Jimp = require("jimp");
 const s3 = new AWS.S3();
 const width = 200;
@@ -50,4 +50,4 @@ function uploadToS3(data, key) {
 */
 function fetchImage(url) {
     return Jimp.read(url);
-)
+}
